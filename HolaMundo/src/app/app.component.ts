@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
+  title = "Hola Mundo";
   texto = 'Esto es un video sobre event binding';
   // nombre = 'Elvis';
   // textoPlaceHolder = 'Escriba algo aqui';
