@@ -36,7 +36,8 @@ export class AppComponent {
     {nombre: "Tomas gonzales", estado: "Promocionado"},
     {nombre: "Lucas Perez", estado: "Regular"},
     {nombre: "Juan Garcia", estado: "Regular"},
-    {nombre: "Martha Perez", estado: "Regular"}
+    {nombre: "Martha Perez", estado: "Regular"},
+    {nombre: "Nicolas Gomez", estado: "Libre"}
   ]
 
   mostrar = false;
