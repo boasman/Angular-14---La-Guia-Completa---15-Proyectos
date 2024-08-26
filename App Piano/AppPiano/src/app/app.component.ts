@@ -10,4 +10,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'AppPiano';
+
+  aplicarSonido(numero: number) : void{
+    const audio = new Audio();
+    audio.src = '../assets/Sonidos/note' + numero + '.wav'
+    audio.load();
+    audio.play();
+  }
 }
