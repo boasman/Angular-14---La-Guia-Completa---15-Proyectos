@@ -31,4 +31,15 @@ export class TareasComponent {
     //Reset Input
     this.nombreTarea = '';
   }
+
+  eliminarTarea(index: number): void{
+    console.log(index);
+
+    this.listTareas.splice(index,1);
+  }
+
+  actualizarTarea(tarea: Tarea, index: number): void{
+    this.listTareas[index].estado = !tarea.estado
+
+  }
 }
