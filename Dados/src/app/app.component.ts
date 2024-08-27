@@ -14,7 +14,7 @@ export class AppComponent {
  dadoIzquierda = 'img/dice1.png';
  dadoDerecha = 'img/dice2.png';
 
- numero1: number = 0;
+ numero1: number = 1;
  numero2: number = 0;
 
  tirarDado(): void{
