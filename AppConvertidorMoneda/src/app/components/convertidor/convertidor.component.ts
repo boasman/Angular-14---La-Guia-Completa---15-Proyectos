@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-convertidor',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './convertidor.component.html',
   styleUrl: './convertidor.component.css'
 })
 export class ConvertidorComponent {
-cantidadIngresada: number = 0;
-cantidadObtenida:  number = 0;
-moneda1:  number = 0;
-moneda2:  number = 0;
-
-listaModena: string[] = [
+cantidad = 0;
+tengo = 'USD'
+quiero = 'EURO'
+total = 0;
+monedas: string[] = [
   'EUR',
   'USD',
   'LIBRA'
