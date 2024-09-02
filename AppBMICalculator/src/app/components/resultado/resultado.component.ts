@@ -12,9 +12,10 @@ export class ResultadoComponent {
 
   bmi: number;
   resultado: string;
-  interpretacion:string;
+  interpretacion: string;
 
   constructor(private route : ActivatedRoute){
+
     this.resultado = '',
     this.interpretacion = ''
     this.bmi = +route.snapshot.paramMap.get("value")!;
@@ -22,9 +23,7 @@ export class ResultadoComponent {
   }
 
   ngOnInit(){
-    this.getResultado();
-      
-    
+        this.getResultado();    
   }
 
   getResultado(){
