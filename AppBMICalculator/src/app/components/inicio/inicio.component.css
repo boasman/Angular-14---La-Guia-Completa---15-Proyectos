@@ -31,3 +31,13 @@ input[type=range]::-webkit-slider-thumb{
 }
 
 
+.sumaResta{
+    cursor: pointer;
+    background-color: #ff4c4f5e ;
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 3px;
+}
+.sexoDesactivo{
+    background-color: #7D2F2F33;
+}
