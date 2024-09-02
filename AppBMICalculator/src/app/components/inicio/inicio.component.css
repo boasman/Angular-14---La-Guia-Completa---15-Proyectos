@@ -2,4 +2,32 @@
     background-color: #ff111328;
     height: 130px;
     border-radius: 10px;
+    color: white;
+    
 }
+
+.sexo{
+    font-size: 40px;
+}
+
+.estiloNumero{
+ font-size: 32px;
+ font-weight: 800;
+ margin-top: -30px;
+}
+.cm{
+font-size: 16px;
+font-weight: 400;
+margin-left: -10px;
+}
+
+
+.form-control-range{
+    width: 95%;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    background: #ff3366;
+}
+
+
