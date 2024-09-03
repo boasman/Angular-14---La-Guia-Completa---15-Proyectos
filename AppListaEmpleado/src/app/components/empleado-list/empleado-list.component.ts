@@ -44,8 +44,6 @@ export class EmpleadoListComponent {
   }
 
   empleadoCountRadioButtonChange(radiobuttonSelect:string):void{
-
     this.radioButtonSeleccionado = radiobuttonSelect;
-
   }
 }
