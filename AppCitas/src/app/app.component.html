@@ -1,35 +1,13 @@
 <div class="container mt-3">
-  <div class="row">
-    <h3>APLICACION DE CITAS</h3>
+  <div class="text-center tituloClass">
+    APLICACION DE CITAS
   </div>
-  <div class="row">
-    <div class="card">
-      <div class="card-body">        
-        <form>
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-          </div>
-          <div class="form-group">
-            <label for="fecha">Fecha</label>
-            <input type="date" class="form-control" id="fecha">
-          </div>
-          <div class="form-group">
-            <label for="hora">Hora</label>
-            <input type="time" class="form-control" id="hora">
-          </div>                   
-          <div class="form-group">
-            <label for="sintoma">Sintomas</label>
-            <textarea class="form-control" id="sintoma" rows="3"></textarea>
-          </div>
-          <button class="btn btn-block">Guardar</button>
-        </form>
-      </div>
+  <div class="row mt-3">
+    <div class="col-lg-6">
+      <app-crear-cita></app-crear-cita>
     </div>
-    <div class="card">
-      <div class="card-body">
-        Card para la cita
-      </div>
+    <div class="col-lg-6">
+      <app-list-citas></app-list-citas>
     </div>
   </div>
 </div>
