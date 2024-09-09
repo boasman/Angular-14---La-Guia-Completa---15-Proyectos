@@ -11,5 +11,21 @@ import { ListCitasComponent } from "./components/list-citas/list-citas.component
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'AppCitas';
+  title = "hola";
+  listCita: any[] = [];
+
+
+  agregarCita(cita:any){
+    console.log('soy un padre');
+    console.log(cita);
+    this.listCita.push(cita);
+    console.log(this.listCita)
+  }
+
+  eliminarCita(index:number){
+
+    //para eliminar un elemento de la lista
+    this.listCita.splice(index,1);
+  }
+
 }

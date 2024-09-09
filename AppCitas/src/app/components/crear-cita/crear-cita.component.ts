@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -17,6 +17,7 @@ export class CrearCitaComponent {
   sintomas='';
 
   formularioIncorrecto = false;
+  @Output() nuevaCita = new EventEmitter<any>();
 
   agregarCita(){
 
@@ -35,5 +36,15 @@ export class CrearCitaComponent {
     }
 
     console.log(CITA);
+    this.nuevaCita.emit(CITA);
+    this.resetCampos();
+    
+  }
+
+  resetCampos(){
+    this.nombre = '',
+    this.fecha = '',
+    this.hora = '',
+    this.sintomas = ''
   }
 }
